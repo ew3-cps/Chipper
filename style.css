@@ -37,6 +37,7 @@ html {
 #logo {
   height: 100px;
   width: 100px;
+  margin-left: 10px;
 }
 /* colors
 451400
@@ -73,12 +74,8 @@ ac2117
   padding-bottom: 5px;
   font-size: 85%;
 }
-#aboutButton {
 
-}
-#orderButton {
-
-}
-#checkoutButton {
-
+#backgroundForNav {
+  width: 100%;
+  background-color: #212529;
 }

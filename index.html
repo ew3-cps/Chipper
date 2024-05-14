@@ -14,32 +14,26 @@
 <!-- Top bar thing's contents -->
 
   <div class="container-fluid">
-    <div class="row colorOne text-white"> 
-      <div class="col-2">
-          <img src="media/logo.png" id="logo">
-      </div>
+
         
-      <div class="col-4 pageLinks"><p class="h1 text-left mt-2">Chipper</p></div>
-        
-      <div class="col-1 pageLinks">
-          <div class="colorTwo topButtons aboutButton">          
-              <a href="index.html" class="pageLink mt-1 link-light">About</a>
+        <nav class="navbar navbar-dark bg-dark d-flex flex-row-reverse">
+                <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="h2 text-light">Chipper</div>
+            <div> 
+            <img src="media/logo.png" id="logo">
+            </div>
+</div>
+            
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+          <div class="bg-dark p-4">
+            <h5 class="text-body-emphasis h4">Collapsed content</h5>
+            <span class="text-body-secondary">Toggleable via the navbar brand.</span>
           </div>
-      </div>
-        
-      <div class="col-1 pageLinks">
-          <div class="colorTwo topButtons orderButton">
-              <a href="index.html" class="pageLink mt-1 link-light">Order</a>
-          </div>
-      </div>
-        
-      <div class="col-1 pageLinks">
-          <div class="colorTwo topButtons checkoutButton">
-            <a href="index.html" class="pageLink mt-1 link-light">Checkout</a>
-          </div>
-      </div>
-      <div class="col-1"></div>
-    </div>
+        </div>
+      
   </div>
 
     
@@ -49,7 +43,7 @@
         <img src="media/burrito.png" style="width: 80%; height: 80%">
         <div>
             <h4><b>Burrito</b></h4>
-            <p style="font-size: 12px;">Freshly made corn tortilla that you can fill up with your favorite ingredients.</p>           
+            <p style="font-size: 12px;">Freshly made corn tortilla that you can top with your favorite ingredients.</p>           
             <form>
                 <h6><b>Rice</b></h6>
                 
@@ -154,7 +148,7 @@
                 <input type="checkbox" id="topping_tomatoes" name="topping"                             value="tomatoes">
                 <label for="topping_tomatoes">Pico</label><br>
 
-                <input type="checkbox" id="topping_sour-cream" name="topping"                             value="topping_sour-cream"">
+                <input type="checkbox" id="topping_sour-cream"               name="topping"                             value="topping_sour-cream"">
                 <label for="topping_sour-cream"">Sour Cream</label><br>
 
             </form>
