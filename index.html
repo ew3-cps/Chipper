@@ -13,28 +13,40 @@
 <body>
 <!-- Top bar thing's contents -->
 
-  <div class="container-fluid">
+      <div class="container-fluid bg-dark">
 
-        
-        <nav class="navbar navbar-dark bg-dark d-flex flex-row-reverse">
-                <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="h2 text-light">Chipper</div>
-            <div> 
-            <img src="media/logo.png" id="logo">
+
+            <div class="navbar navbar-dark bg-dark d-flex flex-row-reverse">
+                    <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="h2 text-light">Chipper</div>
+                    <div> 
+                    <img src="media/logo.png" id="logo">
+                    </div>
+                </div>
+
             </div>
-</div>
-            
-        </nav>
-        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-          <div class="bg-dark p-4">
-            <h5 class="text-body-emphasis h4">Collapsed content</h5>
-            <span class="text-body-secondary">Toggleable via the navbar brand.</span>
-          </div>
-        </div>
-      
-  </div>
+        
+            <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+              <div class="bg-dark p-4">
+                <div class="w-100 d-flex justify-content-between">
+                    <div>
+                        <a href="about.html" class="pageLinks">About</a>
+                    </div>
+                    
+                    <div>
+                        <a href="" class="pageLinks">Menu</a>
+                    </div>
+
+                    <div>
+                        <a href="checkout.html" class="pageLinks">Checkout</a>
+                    </div>
+                    
+                </div>
+              </div>
+            </div>
+      </div>
 
     
 <!-- Page contents -->
@@ -44,7 +56,7 @@
         <div>
             <h4><b>Burrito</b></h4>
             <p style="font-size: 12px;">Freshly made corn tortilla that you can top with your favorite ingredients.</p>           
-            <form>
+            <form id="burritoForm">
                 <h6><b>Rice</b></h6>
                 
                 <input type="radio" id="rice" name="rice" value="brown">
@@ -103,7 +115,7 @@
             <h4><b>Bowl</b></h4>
             <p style="font-size: 12px;">You can fill with any kind of rice, beans, protein, etc. and make your best possible bowl!</p>
 
-            <form>
+            <form id="bowlForm">
                 <h6><b>Rice</b></h6>
 
                 <input type="radio" id="rice" name="rice" value="brown">
@@ -156,10 +168,6 @@
 
     </div>
 
-  
-
-
-  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>

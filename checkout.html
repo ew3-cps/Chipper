@@ -12,12 +12,40 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h1>Chipper</h1>
-      </div>
-    </div>
+  <!-- Top bar thing's contents -->
+  <div class="container-fluid bg-dark">
+
+
+        <div class="navbar navbar-dark bg-dark d-flex flex-row-reverse">
+                <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="h2 text-light">Chipper</div>
+                <div> 
+                <img src="media/logo.png" id="logo">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+          <div class="bg-dark p-4">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <a href="about.html" class="pageLinks">About</a>
+                </div>
+
+                <div>
+                    <a href="index.html" class="pageLinks">Menu</a>
+                </div>
+
+                <div>
+                    <a href="" class="pageLinks">Checkout</a>
+                </div>
+
+            </div>
+          </div>
+        </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
