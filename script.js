@@ -1,16 +1,10 @@
-var submitButton = document.getElementById("submitBurrito");
-
-
-   
-
-submitButton.addEventListener("click", function() {
-    var burritoForm = document.getElementById("burritoForm");
-    var displayBurrito = document.getElementById("burritoResults");
-    var formData = new FormData(burritoForm);
-    var rice = formData.get("rice");
-    var beans = formData.get("beans");
-    var protein = formData.get("protein");
-
-    displayBurrito.innerHTML = "You ordered a " + rice + " burrito with " + beans + " beans," + " and " + protein + " as your protein.";
+var burritoForm = document.getElementById("burritoForm");
+burritoForm.addEventListener("submit", function(event){
+  var data = new FormData(burritoForm);
+  var rice = data.get("rice");
+  var beans = data.get("beans");
+  var protein = data.get("protein");
+  var displayBurrito = document.getElementById("burritoResult");
+  displayBurrito.innerHTML = rice + beans + protein;
+  
 });
-
