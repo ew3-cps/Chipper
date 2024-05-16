@@ -31,15 +31,15 @@
             <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
               <div class="bg-dark p-4">
                 <div class="w-100 d-flex justify-content-between">
-                    <div>
+                    <div class="navDivs">
                         <a href="about.html" class="pageLinks">About</a>
                     </div>
                     
-                    <div>
+                    <div class="navDivs">
                         <a href="" class="pageLinks">Menu</a>
                     </div>
 
-                    <div>
+                    <div class="navDivs">
                         <a href="checkout.html" class="pageLinks">Checkout</a>
                     </div>
                     
@@ -56,14 +56,14 @@
         <div>
             <h4><b>Burrito</b></h4>
             <p style="font-size: 12px;">Freshly made corn tortilla that you can top with your favorite ingredients.</p>           
-            <form id="burritoForm">
+            <form id="burritoForm" action="/checkout.html" method="post">
                 <h6><b>Rice</b></h6>
                 
-                <input type="radio" id="rice" name="rice" value="brown">
-                <label for="rice">Brown Rice</label><br>
+                <input type="radio" id="brownRice" name="rice" value="brown">
+                <label for="brownRice">Brown Rice</label><br>
                 
-                <input type="radio" id="rice"name="rice" value="white">
-                <label for="rice">White Rice</label><br>
+                <input type="radio" id="whiteRice" name="rice" value="white">
+                <label for="whiteRice">White Rice</label><br>
                 
                 <hr>
                 <h6><b>Beans</b></h6>
@@ -89,7 +89,7 @@
                 <hr>
                 <h6><b>Toppings</b></h6>
                 
-                <input type="checkbox" id="topping_salsa" name="topping"                                 value="salsa">
+                <input type="checkbox" id="topping_salsa" name="topping" value="salsa">
                 <label for="topping_salsa">Salsa</label><br>
                 
                 <input type="checkbox" id="topping_guacamole" name="topping"                             value="guacamole">
@@ -104,11 +104,13 @@
                 <input type="checkbox" id="topping_sour-cream" name="topping"                             value="topping_sour-cream"">
                 <label for="topping_sour-cream"">Sour Cream</label><br>
                 
+                <button type="submit" id="submitBurrito" value="Submit">Submit</button>
             </form>
         </div>
         
     </div>
 <!-- card number 2 -->
+    <!--
     <div class = "food-card-container">
         <img src ="media/bowl.png" style="width: 80%; height: 80%">
         <div>
@@ -167,6 +169,8 @@
         </div>
 
     </div>
+
+    -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="script.js"></script>
