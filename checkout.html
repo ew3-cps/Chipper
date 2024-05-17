@@ -47,6 +47,9 @@
           </div>
         </div>
   </div>
+  <button id="dispOrderButton">Display Order</button>
+  <div id="burritoResult">holderText</div>
+
   
 <div class="container-fluid">
   
@@ -60,7 +63,17 @@
   </div>
 </div>
 
-  
+  <script>
+    var displayButton = document.getElementById("dispOrderButton");
+    var rice = sessionStorage.getItem("burritoRice");
+    var beans = sessionStorage.getItem("burritoBeans");
+    var protein = sessionStorage.getItem("burritoProtein");
+
+    displayButton.addEventListener("click", function(){
+      displayBurrito.innerHTML = "You ordered a burrito with " + rice + " rice, " + beans + " beans, and " + protein + " as your protein.";
+    });
+    
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
