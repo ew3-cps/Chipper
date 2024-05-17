@@ -51,10 +51,125 @@
     
 <!-- Page contents -->
 <!-- Card One -->
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-4">
-                
+                <div class="card mt-3 ms-1" style="width: 30rem;">
+                    <img src="media/burrito.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Burrito</h5>
+                      <p class="card-text">Freshly made corn tortilla that you can top with your favorite ingredients.</p>
+                      <form id="burritoForm" method="post">
+                        <h6><b>Rice</b></h6>
+                        
+                        <input type="radio" id="brownRice" name="rice" value="brown">
+                        <label for="brownRice">Brown Rice</label><br>
+                        
+                        <input type="radio" id="whiteRice" name="rice" value="white">
+                        <label for="whiteRice">White Rice</label><br>
+                        
+                        <hr>
+                        <h6><b>Beans</b></h6>
+                        
+                        <input type="radio" id="beans_black" name="beans" value="black">
+                        <label for="beans_black">Black Beans</label><br>
+                        
+                        <input type="radio" id="beans_pinto" name="beans" value="pinto">
+                        <label for="beans_pinto">Pinto Beans</label><br>
+                        
+                        <hr>
+                        <h6><b>Protein</b></h6>
+        
+                        
+                        <input type="radio" id="chicken" name="protein" value="chicken">
+                        <label for="chicken">Chicken</label><br>
+                        <input type="radio" id="steak" name="protein" value="steak">
+                        <label for="steak">Steak</label><br>
+                        <input type="radio" id="al-pastor" name="protein" value="al-pastor">
+                        <label for="al-pastor">Al Pastor</label><br>
+        
+                        
+                        <hr>
+                        <h6><b>Toppings</b></h6>
+                        
+                        <input type="checkbox" id="topping_salsa" name="topping" value="salsa">
+                        <label for="topping_salsa">Salsa</label><br>
+                        
+                        <input type="checkbox" id="topping_guacamole" name="topping"                             value="guacamole">
+                        <label for="topping_guacamole">Guacamole</label><br>
+        
+                        <input type="checkbox" id="topping_cheese" name="topping"                             value="cheese">
+                        <label for="topping_cheese">Cheese</label><br>
+        
+                        <input type="checkbox" id="topping_tomatoes" name="topping"                             value="tomatoes">
+                        <label for="topping_tomatoes">Pico</label><br>
+        
+                        <input type="checkbox" id="topping_sour-cream" name="topping"                             value="topping_sour-cream"">
+                        <label for="topping_sour-cream"">Sour Cream</label><br>
+                        <br>
+                        <button type="submit" id="submitBurrito" value="Submit">Add to Cart</button>
+                    </form>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="card mt-3 ms-1" style="width: 30rem;">
+                    <img src="media/bowl.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Burrito</h5>
+                      <p class="card-text">Freshly made corn tortilla that you can top with your favorite ingredients.</p>
+                      <form id="bowlForm" method="post">
+                        <h6><b>Rice</b></h6>
+                        
+                        <input type="radio" id="bowl_brownRice" name="rice" value="brown">
+                        <label for="bowl_brownRice">Brown Rice</label><br>
+                        
+                        <input type="radio" id="bowl_whiteRice" name="rice" value="white">
+                        <label for="bowl_whiteRice">White Rice</label><br>
+                        
+                        <hr>
+                        <h6><b>Beans</b></h6>
+                        
+                        <input type="radio" id="bowl_beans_black" name="beans" value="black">
+                        <label for="bowl_beans_black">Black Beans</label><br>
+                        
+                        <input type="radio" id="bowl_beans_pinto" name="beans" value="pinto">
+                        <label for="bowl_beans_pinto">Pinto Beans</label><br>
+                        
+                        <hr>
+                        <h6><b>Protein</b></h6>
+        
+                        
+                        <input type="radio" id="bowl_chicken" name="protein" value="chicken">
+                        <label for="bowl_chicken">Chicken</label><br>
+                        <input type="radio" id="bowl_steak" name="protein" value="steak">
+                        <label for="bowl_steak">Steak</label><br>
+                        <input type="radio" id="bowl_al-pastor" name="protein" value="al-pastor">
+                        <label for="bowl_al-pastor">Al Pastor</label><br>
+        
+                        
+                        <hr>
+                        <h6><b>Toppings</b></h6>
+                        
+                        <input type="checkbox" id="bowl_topping_salsa" name="topping" value="salsa">
+                        <label for="bowl_topping_salsa">Salsa</label><br>
+                        
+                        <input type="checkbox" id="bowl_topping_guacamole" name="topping"                             value="guacamole">
+                        <label for="bowl_topping_guacamole">Guacamole</label><br>
+        
+                        <input type="checkbox" id="bowl_topping_cheese" name="topping"                             value="cheese">
+                        <label for="bowl_topping_cheese">Cheese</label><br>
+        
+                        <input type="checkbox" id="topping_tomatoes" name="topping"                             value="tomatoes">
+                        <label for="topping_tomatoes">Pico</label><br>
+        
+                        <input type="checkbox" id="topping_sour-cream" name="topping"                             value="topping_sour-cream"">
+                        <label for="topping_sour-cream"">Sour Cream</label><br>
+                        <br>
+                        <button type="submit" id="submitBurrito" value="Submit">Add to Cart</button>
+                    </form>
+                    </div>
+                  </div>
             </div>
             <div class="col-4">
 
@@ -64,64 +179,7 @@
     </div>
 
     
-    <div class = "food-card-container">
-        <img src="media/burrito.png" style="width: 80%; height: 80%">
-        <div>
-            <h4><b>Burrito</b></h4>
-            <p style="font-size: 12px;">Freshly made corn tortilla that you can top with your favorite ingredients.</p>           
-            <form id="burritoForm" method="post">
-                <h6><b>Rice</b></h6>
-                
-                <input type="radio" id="brownRice" name="rice" value="brown">
-                <label for="brownRice">Brown Rice</label><br>
-                
-                <input type="radio" id="whiteRice" name="rice" value="white">
-                <label for="whiteRice">White Rice</label><br>
-                
-                <hr>
-                <h6><b>Beans</b></h6>
-                
-                <input type="radio" id="beans_black" name="beans" value="black">
-                <label for="beans_black">Black Beans</label><br>
-                
-                <input type="radio" id="beans_pinto" name="beans" value="pinto">
-                <label for="beans_pinto">Pinto Beans</label><br>
-                
-                <hr>
-                <h6><b>Protein</b></h6>
-
-                
-                <input type="radio" id="chicken" name="protein" value="chicken">
-                <label for="chicken">Chicken</label><br>
-                <input type="radio" id="steak" name="protein" value="steak">
-                <label for="steak">Steak</label><br>
-                <input type="radio" id="al-pastor" name="protein" value="al-pastor">
-                <label for="al-pastor">Al Pastor</label><br>
-
-                
-                <hr>
-                <h6><b>Toppings</b></h6>
-                
-                <input type="checkbox" id="topping_salsa" name="topping" value="salsa">
-                <label for="topping_salsa">Salsa</label><br>
-                
-                <input type="checkbox" id="topping_guacamole" name="topping"                             value="guacamole">
-                <label for="topping_guacamole">Guacamole</label><br>
-
-                <input type="checkbox" id="topping_cheese" name="topping"                             value="cheese">
-                <label for="topping_cheese">Cheese</label><br>
-
-                <input type="checkbox" id="topping_tomatoes" name="topping"                             value="tomatoes">
-                <label for="topping_tomatoes">Pico</label><br>
-
-                <input type="checkbox" id="topping_sour-cream" name="topping"                             value="topping_sour-cream"">
-                <label for="topping_sour-cream"">Sour Cream</label><br>
-                
-                <button type="submit" id="submitBurrito" value="Submit">Submit</button>
-            </form>
-        </div>
-        
-    </div>
+    
 <!-- card number 2 -->
     
     <div class = "food-card-container">
